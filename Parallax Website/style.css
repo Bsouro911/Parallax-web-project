@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&family=Pacifico&display=swap");
+
+
+/* For WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width as desired */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #85dd85; /* Background color of the scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #065a06; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Adjust the border radius as desired */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #043d04; /* Color of the scrollbar thumb on hover */
+  }
+  
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+
+.logo a{
+  font-size: 30px;
+  font-family: cursive;
+  font-weight: bolder;
+  color: rgb(7, 73, 7);
+  margin: auto 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin: auto 35px;
+}
+
+li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: green;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+li a:hover {
+  color: green;
+}
+
+li a:hover::after {
+  width: 100%;
+  transition: width 0.4s ease-in;
+}
+
+.navi {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(248, 248, 248);
+  cursor: pointer;
+}
+
+#img1 {
+  background-image: url(https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1200&q=60);
+}
+#img2 {
+  background-image: url(https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80);
+}
+#img3 {
+  background-image: url(https://images.unsplash.com/photo-1433086966358-54859d0ed716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=1200&q=60);
+}
+#img4 {
+  background-image: url(https://images.unsplash.com/photo-1445262102387-5fbb30a5e59d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1200&q=60);
+}
+#img5 {
+  background-image: url(https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80);
+}
+#img6 {
+  background-image: url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60);
+}
+#img7 {
+  background-image: url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60);
+}
+
+body {
+  font-family: "Bodoni Moda", serif;
+  font-size: 1.2rem;
+}
+
+.container-body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(22, 117, 19, 0.73)
+    ),
+    url(https://images.unsplash.com/photo-1502082553048-f009c37129b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  /* background: linear-gradient(to right, #041308, #0b3317); */
+}
+
+.left-text {
+  flex-basis: 30%;
+}
+
+.heading1 {
+  font-size: 4rem;
+  color: rgba(6, 90, 2, 0.826);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: all 0.4s ease-in-out;
+}
+
+.sub-heading {
+  color: #d9d6d6;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "League Spartan", sans-serif;
+  letter-spacing: 3px;
+  transition: all 0.4s ease-in-out;
+}
+
+.sub-heading:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.gallery {
+  flex-basis: 50%;
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 130px;
+}
+
+.box {
+  display: flex;
+  color: white;
+  background-size: cover;
+  background-position: top;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  background-blend-mode: hard-light;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.row-2 {
+  grid-row: span 2;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.box:hover {
+  background-color: #999;
+  background-position: center;
+  box-shadow: 0 0 10px #343434;
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.heading1:hover {
+  /* box-shadow: 0 0 10px #343434; */
+  transform: scale(1.1);
+  color: rgb(3, 70, 0);
+}
+
+/* main */
+
+.forest,
+.mountain,
+.oceans {
+  color: #dfdada;
+}
+.forest {
+  background-color: #564e19fa;
+}
+.mountain {
+  background-color: #a4902d;
+}
+.oceans {
+  background-color: #6595c8;
+}
+
+section {
+  display: flex;
+  padding: 15px 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+}
+
+.h-text {
+  transition: all ease-in;
+}
+
+.h-text span::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: rgb(206, 206, 206);
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.h-text span:hover::after {
+    width: 100%;
+    transition: width 0.4s ease-in;
+}
+
+#text1,
+#text2,
+#text3 {
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#text1 {
+  color: rgb(181, 222, 149);
+}
+#text2 {
+  color: rgb(108, 128, 170);
+}
+#text3 {
+  color: rgb(83, 173, 247);
+}
+
+.forest-img,
+.mountain-img,
+.oceans-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 550px;
+  background-attachment: fixed;
+}
+
+.forest-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(11, 98, 8, 0.523)
+    ),
+    url(https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+}
+.mountain-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(108, 128, 170, 0.723)
+    ),
+    url(https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80);
+}
+.oceans-img {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(78, 153, 214, 0.658)
+    ),
+    url(https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80);
+}
+
+/* footer */
+
+footer {
+  position: absolute;
+  background: #111;
+  height: auto;
+  width: 100%;
+  color: #999;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  margin-top: 10px;
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 15px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  padding: 4px;
+}
+.socials a i {
+  font-size: 1.5rem;
+  width: 30px;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+}
+.footer-bottom {
+  display: flex;
+  background: #000;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding-block: 20px;
+  }
+  .gallery {
+    width: 100%;
+    grid-auto-rows: 220px;
+  }
+  .box {
+    grid-row: span 1;
+    grid-column: span 3;
+  }
+}
